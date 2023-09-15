@@ -27,9 +27,17 @@ class Demo
             i = ref.i;
             j = ref.j;
         }
+
+        ~Demo()
+        {
+            cout<<"Inside Destructor\n";
+        }
 };
 int main()
 {
-
+    Demo obj1;
+    Demo obj2(11,21);
+    Demo obj3(obj2); 
+    
     return 0;
 }
