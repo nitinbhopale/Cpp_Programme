@@ -17,13 +17,21 @@ class Demo
 
        void Display()
        {
+            cout<<"Inside non static method Display\n";
             cout<<"Value of i : "<<i<<"\n";
             cout<<"Value of j : "<<j<<"\n";
+            cout<<"Value of k : "<<k<<"\n";
+       }
+
+       static void fun()
+       {
+            cout<<"Inside static method fun\n";
+            cout<<"Value of k"<<k;
        }
 
 };
 
-int Demo::k = 111;
+ int Demo::k = 111;
 
 int main()
 {
