@@ -8,11 +8,13 @@ class  Demo
         int j;
         int k;
 
+    // Demo(Demo *this, int a= 10, int b = 20 , int c = 30)
     Demo(int a = 10, int b = 20, int c = 30)
     {
-        i = a;
-        j = b;
-        k = c;
+        cout<<"value of this : "<<this<<"\n";
+        this->i = a;
+        this->j = b;
+        this->k = c;
     }
 
     // void Fun(Demo *this, int No1, int No2)
@@ -21,6 +23,7 @@ class  Demo
         cout<<"Inside Fun\n";
         cout<<"value of i : "<<this->i<<"\n";
         cout<<"value of j : "<<this->j<<"\n";
+        cout<<"value of k : "<<this->k<<"\n";
 
     }
     
@@ -28,6 +31,8 @@ class  Demo
     void Display()
     {
         cout<<"Inside Display\n";
+        cout<<"value of this pointer is : "<<this<<"\n";
+
     }
 };
 
@@ -42,11 +47,15 @@ int main()
     obj2.Fun(8,9); //Fun(&obj2,8,9)
                    //Fun(200,8,9)
 
+    cout<<"Address of obj1 is : "<<&obj1<<"\n";
     obj1.Display(); // Display(&obj1);
                     // Display(100);
 
+    cout<<"Address of obj2 is : "<<&obj2<<"\n";
     obj2.Display(); // Display(&obj2);
                     // Display(200);
+
+
 
     return 0;
 }
