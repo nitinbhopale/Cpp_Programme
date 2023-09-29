@@ -35,7 +35,9 @@ class Demo
 
 int main()
 {
-    cout<<"Value of k is :"<<Demo::k<<"\n";
+    cout<<"Value of k is : "<<Demo::k<<"\n";
+
+    Demo::fun();
 
     Demo obj1(11,21);
     Demo obj2(51,101);
