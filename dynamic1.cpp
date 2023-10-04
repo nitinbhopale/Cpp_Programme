@@ -14,8 +14,5 @@ int main()
 
     delete []ptr2;  //C++
 
-
-
-
     return 0;
 }
