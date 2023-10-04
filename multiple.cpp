@@ -23,17 +23,16 @@ class Demo
     }
 };
 
-//class Hello extends Demo
+
 class Hello 
 {
     public:
-        int a,b,c;
+        int a,b;
     Hello()
     {
         cout<<"Inside Hello constructor\n";
         a = 30;
-        b = 40;
-       
+        b = 40;  
     }
 
     ~Hello()
@@ -48,7 +47,7 @@ class Hello
 };
 
 
-class Marvellous : public Demo , public Hello
+class Marvellous : public Hello , public Demo
 {
     public:
         int p ;
@@ -72,14 +71,7 @@ int main()
 {
     Marvellous mobj;
 
-    cout<<"Size of Marvellous Class : "<<sizeof(mobj)<<"Bytes"<<"\n"; // 20
-
-    cout<<mobj.x<<endl;
-    cout<<mobj.y<<endl;
-    cout<<mobj.a<<endl;
-    cout<<mobj.b<<endl;
-    cout<<mobj.c<<endl;
-    cout<<mobj.p<<endl;
+    cout<<"Size of Marvellous Class : "<<sizeof(mobj)<<" Bytes"<<"\n"; // 20
     
     mobj.fun();
     mobj.gun();
