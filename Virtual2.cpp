@@ -26,15 +26,11 @@ class Derived: public Base
 
 int main()
 {
-    Base bobj;
-    Derived dobj;
+    Base *bp1 = new Base;
+    Derived *dp1 = new Derived;
+    Base *bp2 = new Derived; // upcasting
+   // Derived *dp2 = new Base; //downcasting
 
-    cout<<sizeof(bobj)<<"\n"; //12
-    cout<<sizeof(dobj)<<"\n"; //20
 
-    bobj.Fun();
-
-    dobj.Fun();
-    dobj.Gun();
     return 0;
 }
