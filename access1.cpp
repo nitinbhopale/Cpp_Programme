@@ -28,14 +28,22 @@ class Demo
         }
 };
 
+class Hello : public Demo
+{
+    public:
+        void HelloDisplay()
+        {
+            //cout<<"Value of i :"<<i<<endl; //NA
+            cout<<"Value of j :"<<j<<endl;  //A
+            //cout<<"Value of k :"<<k<<endl; //NA
+            cout<<"Value of a :"<<a<<endl; //A
+        }
+};
+
 int main()
 {
-    Demo obj;
-    //cout<<"Value of i :"<<obj.i<<endl; //NA
-    cout<<"Value of j :"<<obj.j<<endl;   //Allowed
-    //cout<<"Value of k :"<<obj.k<<endl; //NA
-    //cout<<"Value of a :"<<obj.a<<endl; //NA
+    Hello hobj;
 
-    obj.Display();
+    hobj.HelloDisplay();
     return 0;
 }
