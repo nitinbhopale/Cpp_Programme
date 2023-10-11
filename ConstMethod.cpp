@@ -42,6 +42,9 @@ int main()
     obj.gun(51,101);
 
     const Demo obj2(11,21,51); 
+
+    //obj2.fun();
+    obj2.gun(51,101);
     
     return 0;
 };
