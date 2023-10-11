@@ -6,6 +6,7 @@ class Hello
     public:
         void fun();
         void gun();
+    
 };
 
 class Demo
@@ -18,7 +19,7 @@ class Demo
         {
             i = 10; j = 20; k=30;
         }
-    friend class Hello;
+         friend class Hello;
 };
 
 // Return Value Class_name :: Function_name()
@@ -42,7 +43,7 @@ void Hello::gun()
 int main()
 {
     Hello hobj;
-    
+
     hobj.fun();
     hobj.gun();
 
